@@ -7,9 +7,6 @@ import (
 	uuid "github.com/satori/go.uuid"
 )
 
-// Crie uma struct de User com ID (uuid), Name e Email.
-// implemente uma função NewUser que seja capaz de validar que ID, Name e Email são obrigatórios, caso o contrário, ela deve retornar um erro.
-
 type User struct 
 {
 	ID    string `json: "id" valid: "uuid"`
